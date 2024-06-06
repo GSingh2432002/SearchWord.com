@@ -13,10 +13,10 @@ function Details() {
   return (
     <div className='p-6 text-white bg-slate-800'>
     {data[0] && (
-        <div className='container mx-auto max-w-5xl px-4 py-8'>
-            <h className="container max-auto max-w-5xl px-4 py-8" >
+        <div className="container mx-auto max-w-5xl px-4 py-8">
+            <h1 className="text-3xl text-center font-bold text-gray-200 mb-8" >
                 Dictionary
-            </h>
+            </h1>
             <div>
                 <h2 className="text-2xl font-bold mb-4">
                     {data[0]["word"]}
@@ -43,7 +43,7 @@ function Details() {
             </div>
             {data[0]["meanings"].map((value, key) => {
                 if (value["partOfSpeech"]){
-                    return <Meaning key={key} meaning={value} />
+                    return <Meaning key={key} meaning={value} />;
                 }
             })}
         </div>

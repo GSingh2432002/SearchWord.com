@@ -18,10 +18,14 @@ function Navbar() {
 
                 <div className="flex md:order-2 relative">
                     <div
-                    to={`/search/${search}`} className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                        to={`/search/${search}`}
+                        className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
                     >
                         <svg
-                            className="w-4 h-4 text-gray-700 dark:text-gray-200" aria-hideen="true" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+                            className="w-4 h-4 text-gray-700 dark:text-gray-200" aria-hidden="true"
+                            xmlns="https://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 20"
                         >
                             <path
                                 stroke="currentColor"

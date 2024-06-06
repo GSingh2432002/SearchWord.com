@@ -9,7 +9,7 @@ function App() {
             <Route path="search/:word" element={<Details />}/>
           </Route>
       )
-  )
+  );
 
   return <RouterProvider router={router} />;
 }
